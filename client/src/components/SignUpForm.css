@@ -1,0 +1,114 @@
+/* General Page Styling */
+body {
+    font-family: 'Garamond', serif;
+    padding-top: 60px; /* Space for fixed navbar */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.signup-page {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    padding: 50px;
+    position: relative;
+    min-height: 100vh; /* Ensure it fits the viewport height */
+    gap: 20px; /* Space between content and message */
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    gap: 20px; /* Space between form and slideshow */
+    width: 100%;
+    max-width: 1200px; /* Control maximum width */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+/* Signup form styling */
+.signup-container {
+    height: 80vh; /* Control the slideshow area height */
+
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    position: relative;
+    top: 10%; /* Adjusted to move the form up */
+    margin-bottom: 20px;
+}
+
+.signup-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.signup-form input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Garamond', serif;
+}
+
+.signup-form .btn-signup {
+    padding: 12px 25px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.signup-form .btn-signup:hover {
+    background-color: #218838;
+}
+
+.signup-form .message {
+    font-size: 1rem;
+    color: red;
+}
+
+/* Right side: Supercar slideshow section */
+.supercar-container {
+    width: 35%;
+    height: 75vh; /* Control the slideshow area height */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin-top: 10px;
+    margin-left: 150px; /* Adjust this value to move the slideshow left */
+}
+
+.supercar-images {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(0);
+    transition: transform 0.3s ease-out;
+}
+
+.supercar-images img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.additional-section {
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    text-align: left;
+    padding: 17px 10px 0px 10px; /* Adjusted padding for balanced spacing */
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-bottom: 0; /* Ensure no extra space below */
+}

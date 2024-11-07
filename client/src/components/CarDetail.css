@@ -1,0 +1,44 @@
+.car-detail {
+    font-family: 'Garamond', serif;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .car-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .close-btn {
+    background-color: #ff4d4f;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .mileage-section {
+    margin-top: 20px;
+  }
+  
+  .mileage-section input {
+    padding: 10px;
+    margin-right: 10px;
+    width: 150px;
+  }
+  
+  .mileage-section button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
