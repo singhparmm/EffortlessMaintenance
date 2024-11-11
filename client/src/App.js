@@ -7,8 +7,10 @@ import CarForm from './components/CarForm';
 import CarDetail from './components/CarDetail'; // New import for CarDetail component
 import './App.css';
 
-const GOOGLE_CSE_ID = '82cc8ca2f97f845f0';
-const GOOGLE_API_KEY = 'AIzaSyB-X6qSTDke9fjugHQznivu0pWEm2utLfo';
+
+const GOOGLE_API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
+const GOOGLE_CSE_ID = process.env.REACT_APP_GOOGLE_CSE_ID;
+
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
